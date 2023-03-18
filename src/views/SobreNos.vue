@@ -4,7 +4,7 @@
   <h1>SOBRE NÓS</h1>
   <p>Lorem ipsum dolor sit amet. Ea aperiam perspiciatis et minima tempore aut ipsam nisi et molestiae dolore et suscipit eveniet. Non fugit quam est velit atque ut illo iusto id galisum consectetur et rerum fuga 33 officiis alias est facilis eveniet.
    Qui reprehenderit eaque ut nesciunt molestiae in aliquid ducimus eum corporis nostrum eos expedita omnis eos neque perspiciatis eum ratione reprehenderit. 
-   <br>
+   <br><br>
    Aut nobis quibusdam qui vitae tempore non debitis iure. Qui voluptatem aliquid et tempora sunt vel nostrum eveniet id blanditiis aperiam eos iusto inventore est tempora incidunt in amet minus. Ut voluptas sapiente ad voluptas deleniti sed temporibus quis est impedit molestias.
     Non fugit quam est velit atque ut illo iusto id galisum consectetur et rerum fuga 33 officiis alias est facilis eveniet.
    empora incidunt in amet minus. Ut voluptas sapiente ad voluptas deleniti sed temporibus quis est impedit molestias.
@@ -44,8 +44,9 @@ export default {
 
 <style lang="scss" scoped>
  main {
-  max-width:980px;
+  max-width:1024px;
   margin:0 auto;
+  
  
   .foto-banner-sobrenos{
    background-image: url(@/assets/sobrenos-foto.svg);
@@ -64,7 +65,8 @@ export default {
   }
   p{
    color:#fff;
-   margin:35px 0px;
+   margin:35px auto;
+   width:90%;
     }
   }
   .fotos-adv{
@@ -72,10 +74,12 @@ export default {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom:3%;
   }
   .foto-adv{
    width:300px;
    height:450px;
+   margin:30px auto;
   }
   #Eike{
     background-image: url(@/assets/fotoEike.svg);
@@ -106,6 +110,14 @@ export default {
    .first-span{padding-top:5px;
    }
   }
+  @media (max-width: 860px) {
+  main h1{
+   top:280px;
+  }
+  .foto-banner-sobrenos{
+    height:400px !important;
+     }
+ }
 
 
 </style>

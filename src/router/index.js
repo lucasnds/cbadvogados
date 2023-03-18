@@ -24,6 +24,12 @@ const routes = [{
         name: 'PoliticaDePrivacidade',
         component: () =>
             import ('../views/PoliticaDePrivacidade.vue')
+    },
+    {
+        path: '/contato',
+        name: 'contatoadv',
+        component: () =>
+            import ('../views/ContatosAdv.vue')
     }
 ]
 

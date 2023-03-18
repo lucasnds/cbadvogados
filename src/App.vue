@@ -1,5 +1,6 @@
 <template>
   <header>
+    <div class="container-header">
     <img src="@/assets/logocbadv.png" alt="logo">
     <nav class="nav-desktop">
       <ul>
@@ -15,78 +16,100 @@
         <li>
           <router-link class="router-link" to="/politicadeprivacidade">POLÍTICA DE PRIVACIDADE</router-link>
         </li>
-        <li>CONTATO</li>
+        <li>
+          <router-link class="router-link" to="/contato">CONTATO</router-link>
+        </li>
       </ul>
     </nav>
+    </div>
   </header>
+
   <router-view/>
   <a href="https://www.google.com/">
     <img class="whatsapp" src="@/assets/whatsapp.svg" alt="whatsapp">
   </a>
   <footer>
-    <div class="localizacao">
-      <div class="icon">
-        <font-awesome-icon icon="fa-solid fa-location-dot"/>
-        <h6>Localização:</h6>
+    <div class="footer">
+    <div class="container-footer">
+      <img src="@/assets/logo-escrita.svg" alt="logo escrita">
+      <div class="localizacao">
+        <div class="icon">
+          <font-awesome-icon class="icone" icon="fa-solid fa-location-dot"/>
+          <h6>Localização:</h6>
+        </div>
+        <p>Wall Street Empresarial - Av. Luís Viana, Paralela - Patamares, Salvador - BA, 41730-101</p>
       </div>
-      <p>~localizacao</p>
+      <div class="contato">
+        <div class="icon">
+          <font-awesome-icon class="icone" icon="fa-solid fa-phone" />
+          <h6>Contato:</h6>
+        </div>
+        <p>(71) 9 0000-0000</p>
+        <p>cdadvogados@gmail.com</p>
+      </div>
     </div>
-    <div class="contato">
-      <div class="icon">
-        <font-awesome-icon icon="fa-solid fa-phone" />
-        <h6>Contato:</h6>
-      </div>
-      <p>(71) 9 0000-0000</p>
-      <p>cdadvogados@gmail.com</p>
+    <div class="redes-socias">
+      <a href=""><img src="@/assets/whatsapp-footer.svg" alt="whatsapp"></a>
+      <a href=""><img src="@/assets/instagram.svg" alt="instagram"></a>
+      
     </div>
     <span>política de privacidade - C&B advogados © 2023</span>
+  </div>
   </footer>
 </template>
 
 <script>
-
 export default {
   name: 'App',
-  
 }
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.nav-desktop,.nav-desktop ul,.container-header,footer,.container-footer,.icon,.redes-socias{
+  display:flex;
+  align-items:center;
+}
 
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
 }
 body{
-  background: linear-gradient(180deg, #000000 67.29%, #0C0E29 100%);
   height:100vh;
   margin-top:76px;
+  background-image: linear-gradient(130deg,#161616 25%,#4f4f4f 100%)!important;
+  
 }
+
 header{
-  position:fixed;
-  top:0;
   background: linear-gradient(286.9deg, #000000 18.68%, #0C0E29 38.18%);
   width:100%;
   z-index:999;
+  position:fixed;
+  top:0;
+  transform: translate(-50%);
+  left: 50%;
+  
 
   img{
-    position:absolute;
-    left: 15px;
-    top: 15px;
+    padding:15px;
   }
 }
+.container-header{
+  max-width:1024px;
+  margin:0 auto;
+  justify-content: space-between;
+   width:100%;
+}
 .nav-desktop{
-    display:flex;
-    align-items: center;
+
     justify-content: center;
     height: 76px;
   ul{ 
-    display:flex;
-    align-items: center;
+
     text-align:center;
     justify-content: center;
   }
@@ -94,24 +117,21 @@ header{
     color:#fff;
     list-style: none;
     margin:0px 20px;
-    //padding:27.5px 0px;
-    font-weight: 700;
     letter-spacing: 0.02em;
-    transform:.8s;
     cursor:pointer;
-    &:hover{
-      border-bottom: 2px #fff solid;
+    font: {
+      size:14px;
+      weight: 400;
+      
     }
   }
 }
-  .router-link{
-    text-decoration:none;
-    color:#fff;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    transform:.8s;
+.router-link{
+  text-decoration:none;
+  color:#fff;
+  transition: .5s;
     &:hover{
-      border-bottom: 2px #fff solid;
+      border-bottom: 1.8px #fff solid;
     }
   }
   .whatsapp{
@@ -121,12 +141,71 @@ header{
     z-index:99;
   }
   footer{
-    display:flex;
     flex-direction:column;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: center;
     color:#fff;
+    width:100%;
+    margin:0 auto;
+    padding:30px 0px;
+    background: #000;
+    span{
+      color:rgba(255, 255, 255, 0.8);
+      font: {
+        size:16px;
+        weight: 400;
+      }
+      text-decoration-line: underline;
+      margin-bottom: 20px;
+    }
+  }
+  .footer{
+    max-width:1024px;
+
+  }
+  .container-footer{
+    justify-content: space-between;
+    flex-direction: row;
+    width:100%;
+    flex-wrap:wrap;
+  }
+  @media (max-width: 970px) {
+    .container-footer {
+      justify-content: center; 
+    }
+    .localizacao,.contato{
+   padding: 15px;
+    }
+  }
+  .icon{
+    justify-content: center;
+    .icone{
+      font-size: 18px;
+      padding-right: 5px;
+    }
+    h6{
+      font: {
+        size:16px;
+        weight: 400;
+    }
+    }
+  }
+  .localizacao{
+    width: 340px;
+  }
+    p{
+      font: {
+        size:14px;
+        weight: 400;
+    }
+  }
+  .redes-socias{
+    justify-content: center;
+    border-top: 2px #fff solid;
+    width:100%;
+    img{
+      padding: 25px 5px;
+    }
   }
 
 </style>
