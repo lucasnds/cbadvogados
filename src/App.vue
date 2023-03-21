@@ -1,7 +1,9 @@
 <template>
   <header>
     <div class="container-header">
-    <img src="@/assets/logocbadv.png" alt="logo">
+      <router-link class="router-link" to="/">
+        <img src="@/assets/logocbadv.png" alt="logo">
+      </router-link>
     <nav class="nav-desktop">
       <ul>
         <li>
@@ -78,9 +80,9 @@ export default {
   font-family: 'Poppins', sans-serif;
 }
 body{
-  height:100vh;
   margin-top:76px;
   background-image: linear-gradient(130deg,#161616 25%,#4f4f4f 100%)!important;
+  background-repeat: no-repeat;
   
 }
 
@@ -95,7 +97,7 @@ header{
   
 
   img{
-    padding:15px;
+    padding:15px 0px;
   }
 }
 .container-header{
@@ -114,26 +116,24 @@ header{
     justify-content: center;
   }
   li{
-    color:#fff;
     list-style: none;
     margin:0px 20px;
     letter-spacing: 0.02em;
-    cursor:pointer;
     font: {
       size:14px;
       weight: 400;
       
     }
+    .router-link{
+      text-decoration:none;
+      color:#fff;
+      transition: .5s;
+        &:hover,&:focus{
+          border-bottom: 1.8px #fff solid;
+        }
+      }
   }
 }
-.router-link{
-  text-decoration:none;
-  color:#fff;
-  transition: .5s;
-    &:hover{
-      border-bottom: 1.8px #fff solid;
-    }
-  }
   .whatsapp{
     position:fixed;
     right:20px;
@@ -147,7 +147,7 @@ header{
     color:#fff;
     width:100%;
     margin:0 auto;
-    padding:30px 0px;
+    padding:30px 0px 15px 0px;
     background: #000;
     span{
       color:rgba(255, 255, 255, 0.8);
@@ -161,10 +161,10 @@ header{
   }
   .footer{
     max-width:1024px;
-
+    width:100%;
   }
   .container-footer{
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     width:100%;
     flex-wrap:wrap;
@@ -191,7 +191,7 @@ header{
     }
   }
   .localizacao{
-    width: 340px;
+    max-width: 340px;
   }
     p{
       font: {

@@ -11,7 +11,12 @@
    <input type="text" placeholder="Digite seu nome">
    <br>
    <label for="">E-mail:</label>
-   <input type="text" placeholder="Digite seu e-mail">
+   <input type="email"
+   name="email"
+   validation="email" 
+   placeholder="Digite seu e-mail"
+   required
+   >
    <br>
    <label for="">Mensagem</label>
    <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
@@ -30,7 +35,7 @@ export default {
 <style lang="scss" scoped>
 .section-banner-contato{
  width:100%;
- height:250px;
+ height:210px;
  //background-image: linear-gradient(130deg,#161616 25%,#4f4f4f 100%)!important;
  
  h2{
@@ -88,7 +93,12 @@ input,textarea{
     font-size: 14px;
     padding: 16px;
     outline:0;
+    &:focus{
+        outline:2px rgb(34, 34, 167) solid; 
+        border-radius:5px;
+    }
 }
+
 button {
  color: #ffffff!important;
  letter-spacing: 4px;

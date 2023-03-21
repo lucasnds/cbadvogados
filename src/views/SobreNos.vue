@@ -10,36 +10,50 @@
    empora incidunt in amet minus. Ut voluptas sapiente ad voluptas deleniti sed temporibus quis est impedit molestias.
     Non fugit quam est velit atque ut illo iusto id galisum consectetur et rerum fuga 33 officiis alias est facilis eveniet.
    </p>
-   <div class="fotos-adv">
-    <div class="foto-adv">
-     <div class="texto-adv" id="Eike">
-      <h3>Eike Menezes</h3>  
-      <span class="first-span">Sócio</span>
-      <span>oeikemenezes@gmail.com<br>(71)9 9000-0000</span>
-     </div>
-    </div>
-    <div class="foto-adv">
-     <div class="texto-adv" id="Paulo">
-      <h3>Paulo Bastos</h3>  
-      <span class="first-span">Co-fundador e Sócio</span>
-      <span>opaulobastos@gmail.com<br>(71)9 9000-0000</span>
-     </div>
-    </div>
-    <div class="foto-adv">
-     <div class="texto-adv" id="Pedro">
-      <h3>Pedro Coelho</h3>  
-      <span class="first-span">Co-fundador e Sócio</span>
-      <span>opedrocoelho@gmail.com<br>(71)9 9000-0000</span>
-     </div>
-    </div>
-   </div>
- </main>
-</template>
 
-<script>
-export default {
-
-}
+      <div class="fotos-adv">
+        <div class="foto-adv" v-for="(advogado, index) in advogados" :key="index">
+          <div class="texto-adv" :id="advogado.photo">
+           <h3>{{advogado.name}}</h3>  
+           <span class="first-span">{{advogado.jobFunction}}</span>
+           <span>{{advogado.email}}<br>{{advogado.number}}</span>
+          </div>
+         </div>
+       </div> 
+     </main>
+    </template>
+    
+    <script>
+    export default {
+      data(){
+            return{
+              //"@/assets/fotoPedro.svg"
+            advogados: [{
+                      photo: "Eike",
+                      name: "Eike Menezes",
+                      jobFunction: "Sócio",
+                      email: "oeikemenezes@gmail.com",
+                      number: "(71)9 0000-0000"
+                  },
+                  {
+                      photo: "Paulo",
+                      name: "Paulo Bastos",
+                      jobFunction: "Co-fundador e Sócio",
+                      email: "opaulobastos@gmail.com",
+                      number: "(71)9 0000-0001"
+                  },
+                  {
+                      photo: "Pedro",
+                      name: "Pedro Coelho",
+                      jobFunction: "Co-fundador e Sócio",
+                      email: "opedrocoelho@gmail.com",
+                      number: "(71)9 0000-0002"
+                  }]
+              
+            }
+          }
+      
+    }
 </script>
 
 <style lang="scss" scoped>
@@ -80,18 +94,16 @@ export default {
    width:300px;
    height:450px;
    margin:30px auto;
+   background-size:cover;
   }
   #Eike{
     background-image: url(@/assets/fotoEike.svg);
-   background-size:cover;
   }
   #Paulo{
     background-image: url(@/assets/fotoPaulo.svg);
-   background-size:cover;
   }
   #Pedro{
     background-image: url(@/assets/fotoPedro.svg);
-   background-size:cover;
   }
   .texto-adv{
     display:flex;
