@@ -15,7 +15,7 @@
           <router-link class="router-link" to="/sobrenos">SOBRE NÓS</router-link>
         </li>
         <li>
-          <router-link class="router-link" to="/areadeatuacao">ÁREA DE ATUAÇÃO</router-link>
+          <router-link class="router-link" to="/areadeatuacao">ÁREAS DE ATUAÇÃO</router-link>
         </li>
         <li>
           <router-link class="router-link" to="/politicadeprivacidade">POLÍTICA DE PRIVACIDADE</router-link>
@@ -75,7 +75,11 @@ export default {
     open(){
       this.isOpen=!this.isOpen
       console.log("menu" + this.isOpen)
-    }
+    },
+    //Mudar nome da title
+    // changeTitle() {
+    //   document.title = 'Novo título da página';
+    // }
   },
   components:{
     NavMobile
@@ -84,7 +88,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 .nav-desktop,.nav-desktop ul,.container-header,footer,.container-footer,.icon,.redes-socias{
   display:flex;
   align-items:center;

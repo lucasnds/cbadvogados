@@ -9,7 +9,7 @@
         <router-link class="router-link" to="/sobrenos">SOBRE NÓS</router-link>
       </li>
       <li>
-        <router-link class="router-link" to="/areadeatuacao">ÁREA DE ATUAÇÃO</router-link>
+        <router-link class="router-link" to="/areadeatuacao">ÁREAS DE ATUAÇÃO</router-link>
       </li>
       <li>
         <router-link class="router-link" to="/politicadeprivacidade">POLÍTICA DE PRIVACIDADE</router-link>
