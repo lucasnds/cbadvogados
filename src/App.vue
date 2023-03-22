@@ -115,7 +115,7 @@ header{
   top:0;
   transform: translate(-50%);
   left: 50%;
-  
+  height: 76px;
 
   img{
     padding:15px 0px;
