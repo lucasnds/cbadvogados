@@ -29,7 +29,7 @@
  </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 main{
  width: 100%;
 }

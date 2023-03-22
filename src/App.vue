@@ -4,6 +4,8 @@
       <router-link class="router-link" to="/">
         <img src="@/assets/logocbadv.png" alt="logo">
       </router-link>
+      <NavMobile v-if="this.isOpen"/>
+      <font-awesome-icon @click="open()" class="menu"  icon="fa-solid fa-bars" />
     <nav class="nav-desktop">
       <ul>
         <li>
@@ -61,8 +63,23 @@
 </template>
 
 <script>
+import NavMobile from '@/components/NavMobile.vue'
 export default {
   name: 'App',
+  data(){
+    return{
+      isOpen:false
+    }
+  },
+  methods:{
+    open(){
+      this.isOpen=!this.isOpen
+      console.log("menu" + this.isOpen)
+    }
+  },
+  components:{
+    NavMobile
+  }
 }
 </script>
 
@@ -98,6 +115,9 @@ header{
 
   img{
     padding:15px 0px;
+    @media(max-width:1039px){
+      padding:15px;
+    }
   }
 }
 .container-header{
@@ -106,6 +126,17 @@ header{
   justify-content: space-between;
    width:100%;
 }
+
+.menu{
+  font-size:2rem;
+  color:#fff;
+  margin-right:15px;
+
+  @media (min-width:840px){
+    display:none;
+  }
+}
+
 .nav-desktop{
 
     justify-content: center;
@@ -132,6 +163,10 @@ header{
           border-bottom: 1.8px #fff solid;
         }
       }
+  }
+
+  @media (max-width:840px){
+    display:none;
   }
 }
   .whatsapp{

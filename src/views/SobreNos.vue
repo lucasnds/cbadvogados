@@ -1,7 +1,9 @@
 <template>
  <main>
-  <div class="foto-banner-sobrenos"></div>
-  <h1>SOBRE NÓS</h1>
+  <div class="foto-banner-sobrenos">
+    <h1>SOBRE NÓS</h1>
+  </div>
+  
   <p>Lorem ipsum dolor sit amet. Ea aperiam perspiciatis et minima tempore aut ipsam nisi et molestiae dolore et suscipit eveniet. Non fugit quam est velit atque ut illo iusto id galisum consectetur et rerum fuga 33 officiis alias est facilis eveniet.
    Qui reprehenderit eaque ut nesciunt molestiae in aliquid ducimus eum corporis nostrum eos expedita omnis eos neque perspiciatis eum ratione reprehenderit. 
    <br><br>
@@ -70,11 +72,12 @@
     }
   h1{
    color: #fff;
-   position:absolute;
-   top: 350px;
-   left: 50%;
-   transform: translate(-50%, -50%);
+   display:flex;
+   justify-content: center;
+   align-items: center;
    font-size:42px;
+   width:100%;
+   height:100%;
    
   }
   p{
@@ -123,9 +126,6 @@
    }
   }
   @media (max-width: 860px) {
-  main h1{
-   top:280px;
-  }
   .foto-banner-sobrenos{
     height:400px !important;
      }
