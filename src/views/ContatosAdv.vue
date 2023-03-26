@@ -94,8 +94,7 @@ input,textarea{
     padding: 16px;
     outline:0;
     &:focus{
-        outline:2px rgb(34, 34, 167) solid; 
-        border-radius:5px;
+        outline:2px solid rgb(34, 34, 167) ; 
     }
 }
 
