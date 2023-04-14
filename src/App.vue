@@ -4,8 +4,7 @@
       <router-link class="router-link" to="/">
         <img src="@/assets/logocbadv.png" alt="logo">
       </router-link>
-      <NavMobile v-if="this.isOpen"/>
-      <font-awesome-icon @click="open()" class="menu"  icon="fa-solid fa-bars" />
+      <img class="menu" src="@/assets/menu.svg" @click="isOpen = true">
     <nav class="nav-desktop">
       <ul>
         <li>
@@ -22,6 +21,27 @@
         </li>
         <li>
           <router-link class="router-link" to="/contato">CONTATO</router-link>
+        </li>
+      </ul>
+    </nav>
+    <nav class="nav-mobile" v-if="isOpen">
+      <img class="close" src="@/assets/close.svg" @click="isOpen = false">
+      <ul>
+        <li>
+          <router-link class="router-link" to="/" @click="isOpen = false">HOME</router-link>
+        </li>
+        <li>
+          <router-link class="router-link" to="/sobrenos" @click="isOpen = false">SOBRE NÓS</router-link>
+        </li>
+        <li>
+          <router-link class="router-link" to="/areadeatuacao" @click="isOpen = false">ÁREAS DE ATUAÇÃO</router-link>
+        </li>
+        <li>
+          <router-link class="router-link" to="/politicadeprivacidade" @click="isOpen = false">POLÍTICA DE PRIVACIDADE</router-link>
+        </li>
+        <hr width="95%" size="1px" align="center">
+        <li id="contato">
+          <router-link class="router-link" id="contato__link" to="/contato" @click="isOpen = false">CONTATO</router-link>
         </li>
       </ul>
     </nav>
@@ -63,26 +83,12 @@
 </template>
 
 <script>
-import NavMobile from '@/components/NavMobile.vue'
 export default {
   name: 'App',
   data(){
     return{
       isOpen:false
     }
-  },
-  methods:{
-    open(){
-      this.isOpen=!this.isOpen
-      console.log("menu" + this.isOpen)
-    },
-    //Mudar nome da title
-    // changeTitle() {
-    //   document.title = 'Novo título da página';
-    // }
-  },
-  components:{
-    NavMobile
   }
 }
 </script>
@@ -244,6 +250,78 @@ header{
     width:100%;
     img{
       padding: 25px 5px;
+    }
+  }
+
+  .close{
+    color:#fff;
+    position: absolute;
+    right: 15px;
+    top:15px;
+  }
+  //.none{
+    //display:none;
+  //}
+  .nav-mobile{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width:95%;
+    border-radius: 10px;
+    background-color: #1C1C1C;
+    padding-bottom: 20px;
+    max-width: 500px;
+   
+    @media(min-width:515px) and (max-width:839px){
+      right: 10px;
+      transform:unset;
+      left:unset;
+    }
+    @media(min-width:840px){
+      display:none;
+    }
+  ul{ 
+    text-align:left;
+    justify-content: center;
+  }
+  li{
+    list-style: none;
+    padding: 30px;
+    letter-spacing: 0.02em;
+    font: {
+      size:1rem;
+      weight: 400;
+      
+    }
+    .router-link{
+      text-decoration:none;
+      color:#fff;
+      transition: .5s;
+        &:hover,&:focus{
+          border-bottom: 1.8px #fff solid;
+        }
+      }
+      
+    }
+    hr{
+      border: 1px #fff solid;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+  }
+  
+  #contato{
+    background-color:#fff!important;
+    border-radius: 100px!important;
+    margin: 0 auto!important;
+    padding: 15px !important;
+    width: 35%;
+  
+    #contato__link{
+      display:flex;
+      justify-content: center;
+      color: #1C1C1C!important;
     }
   }
 
