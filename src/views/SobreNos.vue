@@ -84,6 +84,7 @@
    color:#fff;
    margin:35px auto;
    width:90%;
+   font-size:1rem;
     }
   }
   .fotos-adv{
