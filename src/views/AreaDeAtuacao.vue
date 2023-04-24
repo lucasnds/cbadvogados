@@ -39,6 +39,30 @@ export default {
                       name: "Imobiliário",
                       state: false,
                       description: "Assessoria na realização dos mais variados negócios imobiliários, a exemplo de permutas, dação em pagamento, constituição de hipotecas, locações e formação de joint ventures para atuar no segmento imobiliário etc.<br><br>; estruturação de operações de securitização de recebíveis imobiliários, debêntures imobiliárias efundos de investimento imobiliário; assistência na constituição de shopping centers, hotéis, hospitais, parques temáticos, condomínios, loteamentos, cooperativas habitacionais etc."
+                  },
+                  {
+                      photo: "ambiental",
+                      name: "Ambiental",
+                      state: false,
+                      description: "Assessoria em assuntos jurídicos de natureza ambiental, consultoria legal as partes no que tange a aspectos ambientais de aquisições ou fusões, projetos de financiamento, privatizações, financiamentos; verificação da conformidade ambiental de empresas nos processos de auditoria jurídica (due diligence) e interface com as autoridades reguladoras competentes; negociação para celebração de Termo de Ajustamento de Conduta (TAC) e outras soluções alternativas de conflitos com o Ministério Público Federal e/ou Estadual e Agências Ambientais; assistência jurídica em estudos de impacto ambiental, planos de remediação e de relatórios ambientais. Defesa administrativa e judicial em matérias e questões ambientais; elaboração de estudos e pareceres sobre Direito Ambiental etc."
+                  },
+                  {
+                      photo: "administrativo",
+                      name: "Administrativo",
+                      state: false,
+                      description: "Assessoria jurídica e legislativa permanente e contínua a órgãos e entidades públicos, tais como prefeituras, câmaras de vereadores e autarquias municipais, assessoria e consultoria pessoal a agentes públicos, políticos e administrativos (prefeitos, secretários municipais, vereadores e servidores públicos), assessoria e consultoria jurídica a empresas ou entidades privadas licitantes, contratantes ou conveniadas com a Administração Pública; organização de documentos para habilitação em licitações; Impugnação administrativa a editais de licitação e formalização de recursos administrativos; proposição de processos judiciais (mandados de segurança, cautelares e ações ordinárias); qualificação de entidade como de interesse público (Obtenção de certificado de OSCIP); defesa em ações de improbidade administrativa."
+                  },
+                  {
+                      photo: "notorial",
+                      name: "Notorial e Registral",
+                      state: false,
+                      description: "Assistência em escrituras públicas de venda, compra, compromissos, cessões, doações, dação em pagamento, constituição de ônus e gravames; assessoria em alienação fiduciária de imóveis, retificações de registros e de áreas. Orientação a respeito de cancelamentos de registros públicos imobiliários, divisões amigáveis e judiciais; consultoria em leilões, incorporações, fusões, desmembramentos e loteamentos de imóveis; atuação judicial e administrativa em questões relativas à Lei de Registros Públicos bem como a serviços notariais e registrais etc."
+                  },
+                  {
+                      photo: "tecnologia",
+                      name: "Internet, Comércio Eletrônico e Tecnologia",
+                      state: false,
+                      description: "Estruturação jurídica de sociedades destinadas a operar na Internet, acordos de acionistas e assistência em todas as suas questões legais e operacionais em geral, assessoria na constituição e transformação de sociedades (Start-ups), bem como em aquisições e fusões, dentre outros, e assuntos ligados às suas operações; orientação e assistência na estruturação de serviços e elaboração de seus respectivos termos e condições de uso; elaboração, análise e negociação de contratos relativos à aquisição/cessão, licença e/ou exploração de direitos autorais, software, know-how, marcas, patentes e demais direitos de propriedade intelectual, bem como registro de tais instrumentos junto ao Instituto Nacional da Propriedade Industrial – INPI, dentre outros."
                   }]
               
             }
@@ -71,7 +95,6 @@ main {
  .areas{
   margin: 50px 0px;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   &__image{
@@ -120,7 +143,18 @@ main {
  #imobiliario{
   background-image: url(@/assets/imobiliario.svg);
  }
-
+ #ambiental{
+  background-image: url(@/assets/ambiental.svg);
+ }
+ #administrativo{
+  background-image: url(@/assets/administrativo.svg);
+ }
+ #notorial{
+  background-image: url(@/assets/notorial.svg);
+ }
+ #tecnologia{
+  background-image: url(@/assets/tecnologia.svg);
+ }
  .total{
   padding: 15px 25px;
  }
