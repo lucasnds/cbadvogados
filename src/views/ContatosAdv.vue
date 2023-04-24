@@ -18,7 +18,7 @@
    required
    >
    <br>
-   <label for="">Mensagem</label>
+   <label for="">Mensagem:</label>
    <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
    <button type="submit">Enviar</button>
   </form>

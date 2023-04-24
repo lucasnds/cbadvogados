@@ -4,13 +4,17 @@
     <h1>SOBRE NÓS</h1>
   </div>
   
-  <p>Lorem ipsum dolor sit amet. Ea aperiam perspiciatis et minima tempore aut ipsam nisi et molestiae dolore et suscipit eveniet. Non fugit quam est velit atque ut illo iusto id galisum consectetur et rerum fuga 33 officiis alias est facilis eveniet.
-   Qui reprehenderit eaque ut nesciunt molestiae in aliquid ducimus eum corporis nostrum eos expedita omnis eos neque perspiciatis eum ratione reprehenderit. 
-   <br><br>
-   Aut nobis quibusdam qui vitae tempore non debitis iure. Qui voluptatem aliquid et tempora sunt vel nostrum eveniet id blanditiis aperiam eos iusto inventore est tempora incidunt in amet minus. Ut voluptas sapiente ad voluptas deleniti sed temporibus quis est impedit molestias.
-    Non fugit quam est velit atque ut illo iusto id galisum consectetur et rerum fuga 33 officiis alias est facilis eveniet.
-   empora incidunt in amet minus. Ut voluptas sapiente ad voluptas deleniti sed temporibus quis est impedit molestias.
-    Non fugit quam est velit atque ut illo iusto id galisum consectetur et rerum fuga 33 officiis alias est facilis eveniet.
+  <p>Prover serviços jurídicos de qualidade, a fim de auxiliar os
+    clientes a alcançar seus objetivos de forma eficaz e
+    inovadora, através de advogados e colaboradores
+    qualificados; exercer a advocacia com dignidade e
+    independência, observar a ética, os deveres e
+    prerrogativas profissionais e defender a Constituição, a
+    ordem jurídica do Estado Democrático; através de
+    processos dinâmicos, abertos a novos conhecimentos e
+    com a crença de que os serviços jurídicos devem estar
+    alinhados com os interesses estratégicos e com o
+    contexto econômico de nossos clientes. 
    </p>
 
       <div class="fotos-adv">
@@ -101,13 +105,13 @@
    background-size:cover;
   }
   #Eike{
-    background-image: url(@/assets/fotoEike.svg);
+    background-image: url(@/assets/EikeFoto.jpg);
   }
   #Paulo{
-    background-image: url(@/assets/fotoPaulo.svg);
+    background-image: url(@/assets/PauloFoto.png);
   }
   #Pedro{
-    background-image: url(@/assets/fotoPedro.svg);
+    background-image: url(@/assets/PedroFoto.png);
   }
   .texto-adv{
     display:flex;

@@ -18,6 +18,10 @@
   alinhados com os interesses estratégicos e com o
   contexto econômico de nossos clientes.</p>
     </div>
+
+<button class="btn-contato">
+  <router-link class="router-link" to="/contato">ENTRE EM CONTATO</router-link>
+</button>
   </main>
   
 </template>
@@ -53,6 +57,20 @@ main {
      
     }
   }
+  .btn-contato{
+    padding: 8px 25px;
+    border-radius: 50px;
+    background: linear-gradient(286.9deg, #000000 18.68%, #0C0E29 38.18%);
+    margin: 50px auto; 
+    border: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+.router-link{
+  color: #fff;
+  
+  text-decoration: none;
 }
 @media(max-width:860px){
  .foto-logo,.foto-banner-homePrincipal{

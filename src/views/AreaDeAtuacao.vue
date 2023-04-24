@@ -111,17 +111,16 @@ main {
    display: flex;
    position: relative;
    flex-direction: column;
+   padding: 20px;
 
    &__title{
     font-size: 1.1rem;
-    margin-left: 20px;
-    margin-top: 20px;
     font-weight: 500;
     text-align: left;
    }
    &__description{
     font-weight: 400 !important;
-    padding: 15px 15px 30px 15px;
+    padding:  30px 0px;
     font-size: 1rem;
    }
   }
