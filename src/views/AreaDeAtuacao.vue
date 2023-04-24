@@ -70,7 +70,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 main {
  max-width:1024px;
  margin:0 auto;
@@ -160,6 +160,11 @@ main {
  @media (max-width: 860px) {
   .foto-banner-areadeatuacao{
     height:400px !important;
+     }
+ }
+ @media (max-width: 430px) {
+  main h1{
+    font-size: 32px !important;
      }
  }
 </style>
