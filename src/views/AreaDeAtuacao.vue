@@ -10,7 +10,7 @@
    <div class="areas__text" >
     <p class="areas__text__title">{{item.name}}</p>
     <span @click="item.state = !item.state" v-if="!item.state">Saiba Mais <font-awesome-icon icon="fa-solid fa-caret-right" /></span>
-    <span @click="item.state = !item.state" v-else>Mostrar Menos <font-awesome-icon icon="fa-solid fa-caret-right" /></span>
+    <span @click="item.state = !item.state" v-else>Mostrar Menos <font-awesome-icon icon="fa-solid fa-caret-up" /></span>
     <p class="areas__text__description" v-if="item.state" v-html="item.description"></p>
    </div>
   </div>
@@ -137,7 +137,7 @@ main {
   background-image: url(@/assets/consumidor.svg);
  }
  #trabalho{
-  background-image: url(@/assets/trabalho.svg);
+  background-image: url(@/assets/direitoPrevidenciario.jpg);
  }
  #imobiliario{
   background-image: url(@/assets/imobiliario.svg);

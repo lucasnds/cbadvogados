@@ -4,7 +4,7 @@
     <h1>SOBRE NÓS</h1>
   </div>
   
-  <p>Prover serviços jurídicos de qualidade, a fim de auxiliar os
+  <p>Prover serviços jurídicos de <B>qualidade</B>, a fim de auxiliar os
     clientes a alcançar seus objetivos de forma eficaz e
     inovadora, através de advogados e colaboradores
     qualificados; exercer a advocacia com dignidade e
