@@ -48,7 +48,7 @@ export default {
                   },
                   {
                       photo: "administrativo",
-                      name: "Administrativo",
+                      name: "Licitações e Contratações Públicas",
                       state: false,
                       description: "Assessoria jurídica e legislativa permanente e contínua a órgãos e entidades públicos, tais como prefeituras, câmaras de vereadores e autarquias municipais, assessoria e consultoria pessoal a agentes públicos, políticos e administrativos (prefeitos, secretários municipais, vereadores e servidores públicos), assessoria e consultoria jurídica a empresas ou entidades privadas licitantes, contratantes ou conveniadas com a Administração Pública; organização de documentos para habilitação em licitações; Impugnação administrativa a editais de licitação e formalização de recursos administrativos; proposição de processos judiciais (mandados de segurança, cautelares e ações ordinárias); qualificação de entidade como de interesse público (Obtenção de certificado de OSCIP); defesa em ações de improbidade administrativa."
                   },
@@ -77,9 +77,9 @@ main {
  
 
  .foto-banner-areadeatuacao{
-  background-image: url(@/assets/areadeatuacao.svg);
-  background-size:cover;
-  height:600px;
+ // background-image: url(@/assets/areadeatuacao.svg);
+ // background-size:cover;
+  //height:600px;
   
    }
  h1{
@@ -90,6 +90,7 @@ main {
   font-size:42px;
   width:100%;
   height:100%;
+  padding-top: 30px ;
  }
  }
  .areas{
@@ -159,7 +160,7 @@ main {
  }
  @media (max-width: 860px) {
   .foto-banner-areadeatuacao{
-    height:400px !important;
+   // height:400px !important;
      }
  }
  @media (max-width: 430px) {

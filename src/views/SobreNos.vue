@@ -69,9 +69,9 @@
   
  
   .foto-banner-sobrenos{
-   background-image: url(@/assets/sobrenos-foto.svg);
-   background-size:cover;
-   height:600px;
+   //background-image: url(@/assets/sobrenos-foto.svg);
+   //background-size:cover;
+   //height:600px;
    
     }
   h1{
@@ -82,6 +82,7 @@
    font-size:42px;
    width:100%;
    height:100%;
+   padding-top: 30px;
    
   }
   p{
@@ -132,7 +133,7 @@
   }
   @media (max-width: 860px) {
   .foto-banner-sobrenos{
-    height:400px !important;
+   // height:400px !important;
      }
  }
 

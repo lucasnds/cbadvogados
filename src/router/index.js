@@ -1,9 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/HomePrincipal.vue'
 import SobreNos from '../views/SobreNos.vue'
-
-
-const routes = [{
+const router = createRouter({
+    history: createWebHashHistory(),
+    routes:[{
         path: '/',
         name: 'HomePrincipal',
         component: Home
@@ -31,11 +31,10 @@ const routes = [{
         component: () =>
             import ('../views/ContatosAdv.vue')
     }
-]
-
-const router = createRouter({
-    history: createWebHashHistory(),
-    routes
+    ]
 })
+
+
+
 
 export default router
