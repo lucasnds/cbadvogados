@@ -6,17 +6,17 @@
   <section class="form-contato">
     <div class="div-form">
       <h3>Dúvidas? Fale com nossa equipe:</h3>
-      <form action="https://formspree.io/lucasdoismile16@gmail.com"  method="POST" >
+      <form action="https://formspree.io/f/moqoejqd" method="POST">
         <label for="nome">Nome:</label>
-  <input type="text" id="nome" name="nome">
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome"/>
 
-  <label for="email">E-mail:</label>
-  <input type="email" id="email" name="_replyto">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="_replyto" placeholder="Digite seu melhor e-mail"/>
 
-  <label for="comentario">Comentário:</label>
-  <textarea id="comentario" name="comentario"></textarea>
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" name="comentario" placeholder="Digite um comentário"></textarea>
 
-  <button type="submit">Enviar</button>
+        <button type="submit">Enviar</button>
         <!-- <label for="">Nome:</label>
         <input type="text" placeholder="Digite seu nome" />
         <br />
