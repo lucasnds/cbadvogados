@@ -77,7 +77,7 @@
       <a href=""><img src="@/assets/instagram.svg" alt="instagram"></a>
       
     </div>
-    <span>política de privacidade - C&B advogados © 2023</span>
+    <router-link class="router-link" to="/politicadeprivacidade"><span>política de privacidade - C&B advogados © 2023</span></router-link>
   </div>
   </footer>
 </template>
