@@ -6,17 +6,7 @@
 
     <div class="visao">
       <h2>NOSSA MISSÃO, VISÃO, VALORES</h2>
-      <p>Prover serviços jurídicos de qualidade, a fim de auxiliar os
-  clientes a alcançar seus objetivos de forma eficaz e
-  inovadora, através de advogados e colaboradores
-  qualificados; exercer a advocacia com dignidade e
-  independência, observar a ética, os deveres e
-  prerrogativas profissionais e defender a Constituição, a
-  ordem jurídica do Estado Democrático; através de
-  processos dinâmicos, abertos a novos conhecimentos e
-  com a crença de que os serviços jurídicos devem estar
-  alinhados com os interesses estratégicos e com o
-  contexto econômico de nossos clientes.</p>
+      <p>Consiste na prestação de serviços jurídicos especializados, com o desiderato de alcançar os resultados que se reflitam no alcance da realização dos interesses dos nossos clientes, bem como auxiliá-los na consecução de seus objetivos com eficácia, através de advogados e colaboradores qualificados e com conhecimentos atualizados; para tanto o faz com o respeito à ética, com lealdade às determinações da Ordem dos Advogados do Brasil, atuando com lisura, dignidade e independência, atentando aos deveres e prerrogativas profissionais, bem como à defesa da Constituição Federal e ao Estado Democrático de Direito, aliado aos interesses econômicos de nossos clientes. Nossa equipe conta com profissionais pós-graduados, mestre em direito, e doutorando em direito, dentre outras qualificações profissionais.</p>
     </div>
 
 <button class="btn-contato">

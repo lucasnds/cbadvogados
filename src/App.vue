@@ -68,7 +68,7 @@
           <font-awesome-icon class="icone" icon="fa-solid fa-phone" />
           <h6>Contato:</h6>
         </div>
-        <p>(71) 9 0000-0000</p>
+        <p>(71) 9 8153-5580</p>
         <p>cdadvogados@gmail.com</p>
       </div>
     </div>
