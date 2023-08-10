@@ -26,9 +26,7 @@
                       photo: "Pedro",
                       name: "Dr. Pedro Coelho",
                       jobFunction: "Co-fundador e Sócio",
-                      description: `Doutorando em Direito - UFBA,
-                      Mestre em Direito, Governança e Públicas
-                      , Pós-Graduado em Direito Ambiental e em Licitações e Contratações Públicas`
+                      description: `Doutorando em Direito - UFBA, Mestre em Direito, Governança e Políticas Públicas , Pós-Graduado em Direito Ambiental e em Licitações e Contratações Públicas`
                   },
                   {
                       photo: "Paulo",
