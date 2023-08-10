@@ -26,7 +26,7 @@ export default {
                       photo: "consumidor",
                       name: "Consumidor",
                       state: false,
-                      description: "Assessoria na elaboração de manuais operacionais e redação de contratos, bem como na preparação de material de divulgação em campanhas publicitárias de bens e serviços destinados ao consumo. Consultoria em questões específicas levadas ao conhecimento dos órgãos encarregados da proteção ao consumidor (PROCON), representação e acompanhamento de processos administrativos e judiciais que envolvam reclamação e pedido de indenização de consumidores etc."
+                      description: "Representação e acompanhamento de processos administrativos e judiciais que envolvam reclamação e pedido de indenização de consumidores etc. bem como assessoramento e apoio jurídico a empresas que lidam diretamente com o consumidor, seja por compliance, seja em atuação de contencioso."
                   },
                   {
                       photo: "trabalho",
@@ -38,7 +38,7 @@ export default {
                       photo: "imobiliario",
                       name: "Imobiliário",
                       state: false,
-                      description: "Assessoria na realização dos mais variados negócios imobiliários, a exemplo de permutas, dação em pagamento, constituição de hipotecas, locações e formação de joint ventures para atuar no segmento imobiliário etc.<br><br>; estruturação de operações de securitização de recebíveis imobiliários, debêntures imobiliárias efundos de investimento imobiliário; assistência na constituição de shopping centers, hotéis, hospitais, parques temáticos, condomínios, loteamentos, cooperativas habitacionais etc."
+                      description: "Assessoria na realização dos mais variados negócios imobiliários, a exemplo de permutas, dação em pagamento, constituição de hipotecas, locações e formação de joint ventures para atuar no segmento imobiliário etc.; estruturação de operações de securitização de recebíveis imobiliários, debêntures imobiliárias e fundos de investimento imobiliário; assistência na constituição de empreendimento, notadamente de condomínios, loteamentos, cooperativas habitacionais dentre outros, lidando com incorporação e constituição de sociedades de propósito específico etc."
                   },
                   {
                       photo: "ambiental",
@@ -63,6 +63,18 @@ export default {
                       name: "Internet, Comércio Eletrônico e Tecnologia",
                       state: false,
                       description: "Estruturação jurídica de sociedades destinadas a operar na Internet, acordos de acionistas e assistência em todas as suas questões legais e operacionais em geral, assessoria na constituição e transformação de sociedades (Start-ups), bem como em aquisições e fusões, dentre outros, e assuntos ligados às suas operações; orientação e assistência na estruturação de serviços e elaboração de seus respectivos termos e condições de uso; elaboração, análise e negociação de contratos relativos à aquisição/cessão, licença e/ou exploração de direitos autorais, software, know-how, marcas, patentes e demais direitos de propriedade intelectual, bem como registro de tais instrumentos junto ao Instituto Nacional da Propriedade Industrial – INPI, dentre outros."
+                  },
+                  {
+                      photo: "municipal",
+                      name: "Direito Municipal",
+                      state: false,
+                      description: "Atuar a favor do município, sendo responsável por regularizar os serviços públicos municipais, bem como guiar as atividades dos poderes Executivo e Legislativo. Integração entre os aspectos jurídicos e a gestão pública, orientando os gestores municipais, atuando preventivamente nas questões administrativas, bem como desenvolvendo com afinco a atividade da advocacia contenciosa (demandas judiciais). Por entender que o aspecto político é primordial e indispensável em uma Administração Pública Municipal, atuamos em defesa dos gestores públicos nas demandas que possam, de alguma forma, interferir na gestão pública Municipal, além de prestar Assessoria no período eleitoral."
+                  },
+                  {
+                      photo: "eleitoral",
+                      name: "Direito Eleitoral",
+                      state: false,
+                      description: "O nosso escopo de atuação na advocacia eleitoral compreende todas as demandas da área, judiciais e extrajudiciais, dentre as quais destacamos: assessoria em campanhas eleitorais; propositura e defesa em processos eleitorais; análise prévia de elegibilidade e inelegibilidade; impugnação e defesa em processos de registro de candidatura; elaboração de pareceres em matéria eleitoral; propositura e defesa em cassação de diploma e de mandato; assessoria a empresa de pesquisa eleitoral; atuação em processos de contas eleitorais; improbidade Administrativa; orientações sobre participação feminina das chapas."
                   }]
               
             }
@@ -154,6 +166,12 @@ main {
  }
  #tecnologia{
   background-image: url(@/assets/tecnologia.svg);
+ }
+ #municipal{
+  background-image: url(@/assets/municipal.png);
+ }
+ #eleitoral{
+  background-image: url(@/assets/eleitoral.png);
  }
  .total{
   padding: 15px 25px;

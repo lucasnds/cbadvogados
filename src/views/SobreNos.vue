@@ -3,26 +3,13 @@
   <div class="foto-banner-sobrenos">
     <h1>SOBRE NÓS</h1>
   </div>
-  
-  <p>Prover serviços jurídicos de <B>qualidade</B>, a fim de auxiliar os
-    clientes a alcançar seus objetivos de forma eficaz e
-    inovadora, através de advogados e colaboradores
-    qualificados; exercer a advocacia com dignidade e
-    independência, observar a ética, os deveres e
-    prerrogativas profissionais e defender a Constituição, a
-    ordem jurídica do Estado Democrático; através de
-    processos dinâmicos, abertos a novos conhecimentos e
-    com a crença de que os serviços jurídicos devem estar
-    alinhados com os interesses estratégicos e com o
-    contexto econômico de nossos clientes. 
-   </p>
 
       <div class="fotos-adv">
         <div class="foto-adv" v-for="(advogado, index) in advogados" :key="index">
           <div class="texto-adv" :id="advogado.photo">
            <h3>{{advogado.name}}</h3>  
-           <span class="first-span">{{advogado.jobFunction}}</span>
-           <span>{{advogado.email}}<br>{{advogado.number}}</span>
+           <span class="first-span" style="font-weight: 600;">{{advogado.jobFunction}}</span>
+           <span style="font-size: 15px;">{{advogado.description}}</span>
           </div>
          </div>
        </div> 
@@ -34,27 +21,28 @@
       data(){
             return{
               //"@/assets/fotoPedro.svg"
-            advogados: [{
-                      photo: "Eike",
-                      name: "Eike Menezes",
-                      jobFunction: "Sócio",
-                      email: "oeikemenezes@gmail.com",
-                      number: "(71)9 0000-0000"
+            advogados: [
+              {
+                      photo: "Pedro",
+                      name: "Dr. Pedro Coelho",
+                      jobFunction: "Co-fundador e Sócio",
+                      description: `Doutorando em Direito - UFBA,
+                      Mestre em Direito, Governança e Públicas
+                      , Pós-Graduado em Direito Ambiental e em Licitações e Contratações Públicas`
                   },
                   {
                       photo: "Paulo",
-                      name: "Paulo Bastos",
+                      name: "Dr. Paulo Bastos",
                       jobFunction: "Co-fundador e Sócio",
-                      email: "opaulobastos@gmail.com",
-                      number: "(71)9 0000-0001"
+                      description: "Especialista em Compliance, Direito e Processo do Trabalho."
                   },
+                 
                   {
-                      photo: "Pedro",
-                      name: "Pedro Coelho",
-                      jobFunction: "Co-fundador e Sócio",
-                      email: "opedrocoelho@gmail.com",
-                      number: "(71)9 0000-0002"
-                  }]
+                      photo: "Eike",
+                      name: "Dr. Eike Menezes",
+                      jobFunction: "Sócio",
+                      description: "Pós-Graduado em Direito Civil, Processo Civil e Direito Empresarial"
+                  },]
               
             }
           }
@@ -67,13 +55,7 @@
   max-width:1024px;
   margin:0 auto;
   
- 
-  .foto-banner-sobrenos{
-   //background-image: url(@/assets/sobrenos-foto.svg);
-   //background-size:cover;
-   //height:600px;
-   
-    }
+
   h1{
    color: #fff;
    display:flex;
@@ -85,12 +67,6 @@
    padding-top: 30px;
    
   }
-  p{
-   color:#fff;
-   margin:35px auto;
-   width:90%;
-   font-size:1rem;
-    }
   }
   .fotos-adv{
     display:flex;

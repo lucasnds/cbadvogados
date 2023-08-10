@@ -61,7 +61,7 @@
           <font-awesome-icon class="icone" icon="fa-solid fa-location-dot"/>
           <h6>Localização:</h6>
         </div>
-        <p>Wall Street Empresarial - Av. Luís Viana, Paralela - Patamares, Salvador - BA, 41730-101</p>
+        <p>Wall Street Empresarial - Torre A, Sala 121 - Av. Luís Viana, Paralela - Patamares, Salvador - BA, 41730-101</p>
       </div>
       <div class="contato">
         <div class="icon">
@@ -69,12 +69,10 @@
           <h6>Contato:</h6>
         </div>
         <p>(71) 9 8153-5580</p>
-        <p>cdadvogados@gmail.com</p>
+        <p>coelhoebastos.adv@outlook.com</p>
       </div>
     </div>
     <div class="redes-socias">
-      <a href=""><img src="@/assets/whatsapp-footer.svg" alt="whatsapp"></a>
-      <a href=""><img src="@/assets/instagram.svg" alt="instagram"></a>
       
     </div>
     <router-link class="router-link" to="/politicadeprivacidade"><span>política de privacidade - C&B advogados © 2023</span></router-link>
@@ -245,13 +243,10 @@ header{
     }
   }
   .redes-socias{
-    justify-content: center;
     border-top: 2px #fff solid;
-    width:100%;
-    img{
-      padding: 25px 5px;
+    margin: 20px 0px ;
     }
-  }
+  
 
   .close{
     color:#fff;
