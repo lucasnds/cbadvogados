@@ -49,7 +49,7 @@
   </header>
 
   <router-view/>
-  <a href="https://api.whatsapp.com/send?phone=5571998153558&text=Ol%C3%A1">
+  <a href="https://api.whatsapp.com/send?phone=5571981535580&text=Ol%C3%A1">
     <img class="whatsapp" src="@/assets/whatsapp.svg" alt="whatsapp">
   </a>
   <footer>
@@ -76,7 +76,7 @@
       <a href="https://www.instagram.com/coelhoebastosadv" target="_blank">
         <img src="../src/assets/instagram.svg" alt="instagram">
       </a>
-      <a href="https://api.whatsapp.com/send?phone=5571998153558&text=Ol%C3%A1">
+      <a href="https://api.whatsapp.com/send?phone=5571981535580&text=Ol%C3%A1">
         <img src="../src/assets/whatsapp-footer.svg" alt="whatsapp">
       </a>
     </div>
