@@ -49,7 +49,7 @@
   </header>
 
   <router-view/>
-  <a href="https://www.google.com/">
+  <a href="https://api.whatsapp.com/send?phone=5571998153558&text=Ol%C3%A1">
     <img class="whatsapp" src="@/assets/whatsapp.svg" alt="whatsapp">
   </a>
   <footer>
@@ -73,7 +73,12 @@
       </div>
     </div>
     <div class="redes-socias">
-      
+      <a href="https://www.instagram.com/coelhoebastosadv" target="_blank">
+        <img src="../src/assets/instagram.svg" alt="instagram">
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=5571998153558&text=Ol%C3%A1">
+        <img src="../src/assets/whatsapp-footer.svg" alt="whatsapp">
+      </a>
     </div>
     <router-link class="router-link" to="/politicadeprivacidade"><span>política de privacidade - C&B advogados © 2023</span></router-link>
   </div>
@@ -244,7 +249,17 @@ header{
   }
   .redes-socias{
     border-top: 2px #fff solid;
-    margin: 20px 0px ;
+    margin: 20px 0px 15px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    img{
+      padding-top: 15px;
+      cursor: pointer;
+    }
+    
     }
   
 
