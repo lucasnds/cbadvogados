@@ -147,25 +147,25 @@ main {
  }
 
  #consumidor{
-  background-image: url(@/assets/consumidor.svg);
+  background-image: url(@/assets/consumidor.png);
  }
  #trabalho{
   background-image: url(@/assets/direitoPrevidenciario.jpg);
  }
  #imobiliario{
-  background-image: url(@/assets/imobiliario.svg);
+  background-image: url(@/assets/imobiliario.png);
  }
  #ambiental{
-  background-image: url(@/assets/ambiental.svg);
+  background-image: url(@/assets/ambiental.png);
  }
  #administrativo{
-  background-image: url(@/assets/administrativo.svg);
+  background-image: url(@/assets/administrativo.png);
  }
  #notorial{
   background-image: url(@/assets/notorial.svg);
  }
  #tecnologia{
-  background-image: url(@/assets/tecnologia.svg);
+  background-image: url(@/assets/tecnologia.png);
  }
  #municipal{
   background-image: url(@/assets/municipal.png);

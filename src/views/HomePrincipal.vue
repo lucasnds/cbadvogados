@@ -29,7 +29,7 @@ main {
   
  
   .foto-banner-homePrincipal{
-   background-image: url(@/assets/banner-homePrincipal.svg);
+   background-image: url(@/assets/banner-homePrincipal.png);
    background-size:cover;
    height:600px;
    margin-top: -20px;
