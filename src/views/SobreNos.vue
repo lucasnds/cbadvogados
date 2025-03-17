@@ -33,13 +33,6 @@
                       name: "Dr. Paulo Bastos",
                       jobFunction: "Co-fundador e Sócio",
                       description: "Especialista em Compliance, Direito e Processo do Trabalho."
-                  },
-                 
-                  {
-                      photo: "Eike",
-                      name: "Dr. Eike Menezes",
-                      jobFunction: "Sócio",
-                      description: "Pós-Graduado em Direito Civil, Processo Civil e Direito Empresarial"
                   },]
               
             }
@@ -78,9 +71,6 @@
    height:450px;
    margin:30px auto;
    background-size:cover;
-  }
-  #Eike{
-    background-image: url(@/assets/EikeFoto.jpg);
   }
   #Paulo{
     background-image: url(@/assets/PauloFoto.png);
